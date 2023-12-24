@@ -3,7 +3,9 @@ import './App.css';
 import Home from './pages/Home';
 import LoginPage from './pages/Loginpage';
 import SignupPage from './pages/Signuppage';
-import Cart from './features/cart/Cart';
+import CartPage from './pages/Cartpage';
+import CheckoutPage from './pages/Checkoutpage';
+import Productdetailpage from './pages/Productdetailpage';
 
 import { createRoot } from "react-dom/client";
 import {
@@ -28,7 +30,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/cart",
-    element: <Cart></Cart>,
+    element: <CartPage></CartPage>,
+  },
+  {
+    path: "/checkout",
+    element: <CheckoutPage></CheckoutPage>,
+  },
+  {
+    path: "/product-detail",
+    element: <Productdetailpage></Productdetailpage>,
   },
 ]);
 
